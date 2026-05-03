@@ -1,0 +1,57 @@
+.alert {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 0.25rem 0.375rem rgba(0,0,0,0.1);
+  color: white;
+  max-width: 100%;
+  width: fit-content;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.alert-error {
+  background-color: #FF4949;
+}
+
+.alert-success {
+  background-color: #48bb78;
+}
+
+.alert-icon {
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.alert-message {
+  font-size: 0.875rem;
+}
+
+.alert-close {
+  margin-left: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.alert-close:hover {
+  opacity: 0.75;
+}
+
+.alert-close:focus {
+  outline: none;
+}
+
+.alert-close-icon {
+  font-size: 1.125rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-0.625rem); }
+  to { opacity: 1; transform: translateY(0); }
+}

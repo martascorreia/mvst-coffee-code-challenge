@@ -1,0 +1,75 @@
+.coffee-page-title {
+  font-family: 'Bebas Neue', sans-serif; 
+  font-size: 8.125rem;                       
+  line-height: 8.125rem;                   
+  letter-spacing: 0;                     
+  text-transform: uppercase;            
+}
+
+.coffee-page-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  letter-spacing: 0%;
+  color: #BDBDBD;
+}
+
+.coffee-section-title{
+  line-height: 3.125rem;
+  letter-spacing: 0%;
+  text-transform: uppercase;            
+  font-size: 3.125rem;
+}
+
+@media (max-width: 768px) {
+  .coffee-page-title {
+    font-size: 4rem;
+    line-height: 5rem;   
+  }
+
+  .coffee-page-description{
+    padding: 0 2rem;
+  }
+
+  .coffee-section-title{
+     font-size: 2.5rem;
+  }
+}
+
+/* filters */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 40%;
+  height: 3.125rem;
+  background-color: #2a2a2a;
+  border-radius: 1.563rem;
+  padding: 0.313rem;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .filter-container {
+    width: 90%;
+  }
+}
+
+.filter-container button {
+  flex: 1;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 1.563rem;
+  padding: 0.313rem;
+}
+
+.filter-container button.active {
+  color: #2a2a2a;
+  background-color: #ffffff;
+  z-index: 2;
+  border-radius: 1.563rem;
+  height: 3.125rem;
+}

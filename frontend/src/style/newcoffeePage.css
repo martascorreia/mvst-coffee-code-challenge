@@ -1,0 +1,30 @@
+.new-coffee-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+}
+
+.new-coffee-title{
+  font-size: 3.125rem !important;
+  line-height: 3.125rem;
+  text-transform: uppercase;            
+  letter-spacing: 0%;
+}
+
+.multiple-rows{
+  display: flex;
+  gap: 1rem;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .multiple-rows {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .multiple-rows > div {
+    width: 100% !important;
+  }
+}

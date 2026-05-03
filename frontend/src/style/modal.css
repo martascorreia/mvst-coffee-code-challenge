@@ -1,0 +1,151 @@
+.modal-overlay {
+  position: fixed !important;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal-content {
+  position: relative;
+  width: 40%;
+  max-height: 80vh; 
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  overflow-y: auto;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    padding: 1.5rem;  
+    border-radius: 0%;   
+  }
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filled-field {
+  color: white;
+  border: 0.0625rem solid white;
+}
+
+.empty-field {
+  color: #888888;
+  border: 0.0625rem solid #888888;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .field-container {
+    width: 100%;
+  }
+}
+
+.multiple-field-container {
+  width: 100%;
+}
+
+.field-label {
+  font-weight: 500;
+  color: #888888;
+}
+
+.text-field,
+.price-field,
+.options-field {
+  display: flex;       
+  align-items: center; 
+  padding: 0.5rem;      
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.text-field,
+.price-field {
+  background-color: #2a2a2a;
+}
+
+.text-field::placeholder,
+.price-field::placeholder {
+  color: #888888;
+}
+
+.price-field-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.price-field {
+  width: 100%;
+  padding-right: 2rem;
+}
+
+.price-symbol {
+  position: absolute;
+  right: 0.5rem;
+  pointer-events: none;
+  font-size: 0.875rem;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  padding-right: 2rem;
+  position: relative;
+}
+
+.options-field-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.options-field {
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.3s;
+}
+
+.modal-buttons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem; 
+}
+
+@media (max-width: 768px) {
+  .modal-buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1.5rem; 
+  }
+}
