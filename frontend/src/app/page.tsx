@@ -94,7 +94,7 @@ export default function CoffeePage() {
                 description={description}
                 imageUrl={imageUrl}
                 type={type}
-                color={color}
+                color={color ?? "brown"}
                 price={price}
               />
             ))}
