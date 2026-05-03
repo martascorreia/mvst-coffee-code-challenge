@@ -1,4 +1,17 @@
 {
+  "name": "mvst-coffee-code-challenge",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:frontend": "yarn workspace frontend dev",
+    "dev:backend": "yarn workspace backend start:dev",
+    "build": "yarn workspaces run build",
+    "lint": "yarn workspaces run lint",
+    "test": "yarn workspaces run test"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
