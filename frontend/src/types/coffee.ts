@@ -4,6 +4,6 @@ export type Coffee = {
   description: string;
   imageUrl: string;
   type: string;
-  color: string;
+  color?: string;
   price: number;
 };
